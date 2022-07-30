@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function() {
             let t = getTimeRemaining(endtime);
             function addZero(num) {
                 if(num <= 9) {
-                    return '0' + num
+                    return '0' + num;
                 } else return num;
             }
             hours.textContent = addZero(t.hours);
@@ -106,4 +106,28 @@ window.addEventListener('DOMContentLoaded', function() {
         more.classList.remove('more-splash');
         document.body.style.overflow = '';
     });
+
+    class Options {
+        constructor(height, width, bg, fontSize, textAlign) {
+            this.height = height;
+            this.width = width;
+            this.bg = bg;
+            this.fontSize = fontSize;
+            this.textAlign = textAlign;
+        }
+        createDiv() {
+            let elem = document.createElement('div');
+            document.body.appendChild(elem);
+            let param = `height:${this.height}px; width:${this.width}px;  background-color:${this.bg}; font-size:${this.fontSize}px; text-align:${this.textAlign}` ;
+            elem.style.cssText = param;
+        }
+    }
+
+
+    const item = new Options(200, 350, "red", 14, 'center' );
+
+    item.createDiv();
+
+
+
 });

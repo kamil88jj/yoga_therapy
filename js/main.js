@@ -4,7 +4,10 @@
 let age = document.getElementById('age');
 
 function showUser(surname, name) {
-alert("Пользователь " + surname + " " + name + ", его возраст " + this.value);
+(`Пользователь ${surname} ${name}  лет `    + this.value);
 }
 
-showUser.apply(age, ['дон', 'дигидон']);
+showUser.apply(age, [' дон ', ' дигидон ']);
+
+
+
