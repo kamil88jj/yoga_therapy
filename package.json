@@ -1,0 +1,30 @@
+{
+  "name": "yoga-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamil88jj/yoga_therapy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamil88jj/yoga_therapy/issues"
+  },
+  "homepage": "https://github.com/kamil88jj/yoga_therapy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-es6-promise": "^1.1.1",
+    "es6-promise": "^4.2.8",
+    "formdata-polyfill": "^4.0.10",
+    "nodelist-foreach-polyfill": "^1.2.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
